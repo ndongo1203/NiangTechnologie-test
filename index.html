@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Test technique</title>
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const check = document.querySelector('#check');
+        const menu = document.querySelector('.menu');
+
+        check.addEventListener('change', () => {
+            menu.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<body>
+    <div class="Page1">
+        <section id="Navbar">
+            <div class="top-line"></div>
+            <div class="navbar">
+                <div class="logo">Know</div>
+                <ul class="nav-links">
+                    <li><a href="#" active>Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Teachers</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="contact">+65 2244 1100</div>
+                
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </section>
+
+        <section id="Page">
+            <div class="page">
+                <div class="continue">
+                    <h1>Start your journey with our practical courses</h1>
+                    <p>Our online courses are built in partnership with technology leaders and are designed to meet
+                        industry demands.
+                    </p>
+                    <button>Take a course</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Teachers">
+            <div class="title-teacher">
+                <h2>Teachers</h2>
+                <p>Meet Professional Trainers</p>
+            </div>
+            <div class="cards-container"></div>
+        </section>
+
+        <section id="Popular-courses">
+            <div class="popular">
+                <div class="popular-text">
+                    <h2>Popular Courses</h2>
+                    <p>Upgrade your skills</p>
+                </div>
+                <div class="courses-container">
+                    <div class="course">
+                        <img src="images/courses-image5.jpg" alt="Course 1">
+                        <div class="course-info">
+                            <p>
+                                <i class="fas fa-calendar"></i> 5/10/2018
+                                <i class="fas fa-clock"></i> 10 heures
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <img src="images/courses-image1.jpg" alt="Course 2">
+                        <div class="course-info">
+                            <p>
+                                <i class="fas fa-calendar"></i> 12/07/2018
+                                <i class="fas fa-clock"></i> 7 heures
+                            </p>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <img src="images/courses-image2.jpg" alt="Course 3">
+                        <div class="course-info">
+                            <p>
+                                <i class="fas fa-calendar"></i> 20/07/2018
+                                <i class="fas fa-clock"></i> 4,5 heures
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="Page2">
+        <section id="Menagement">
+            <div class="cards-menagement">
+                <div class="card">
+                    <h2>Business & Management</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="author-info">
+                            <img src="images/author-image2.jpg" alt="Jessica">
+                            <span>Jessica</span>
+                        </div>
+                        <button class="btn-blue">Free</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Social Media Management</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="author-info">
+                            <img src="images/author-image1.jpg" alt="Mark Wilson">
+                            <span>Mark Wilson</span>
+                        </div>
+                        <button class="btn-green">USD 25</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Graphic & Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="author-info">
+                            <img src="images/author-image2.jpg" alt="Jessica">
+                            <span>Jessica</span>
+                        </div>
+                        <button class="btn-green">USD 80</button>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-icons">
+                <div class="icon chevron-left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon chevron-right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="Contact">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <p>We love conversation. Let us talk!</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="full-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-image">
+                    <img src="images/contact-image.jpg" alt="Contact Us">
+                </div>
+            </div>
+        </section>
+
+        <section id="Footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Headquarter</h4>
+                    <p>Dapibus a tortor pretium</p>
+                    <p>Interger nisl dui, ABC1200</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>+65 2244 1100</p>
+                    <p>Hello@yourmeal.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter Signup</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="teacher.js"></script>
+</body>
+
+</html>
